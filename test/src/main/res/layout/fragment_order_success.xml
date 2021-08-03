@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="236dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30dp"
+        android:background="#ffffff"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="1dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bn_confirm"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="38dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_tick_success" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="11dp"
+                    android:text="Thanh toán thành công."
+                    android:textColor="#A1B753"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="Cám ơn bạn đã đặt hàng. Mọi thay đổi\n hoặc hỗ trợ về đơn hàng này vui lòng gọi"
+                    android:textAlignment="center"
+                    android:textColor="#484848"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="hotline"
+                        android:textAlignment="center"
+                        android:textColor="#484848"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="5dp"
+                        android:text="081 812 3838"
+                        android:textAlignment="center"
+                        android:textColor="#A1B753"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="19dp"
+                    android:background="@drawable/live_stream_product_success_bg"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginBottom="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/tvOrderId">
+
+                            <TextView
+                                android:id="@+id/tvBrandShop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/img_tick"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="11dfsfsfdasfdsafsfsdfadsf111"
+                                android:textColor="#484848"
+                                android:textSize="9sp" />
+
+                            <ImageView
+                                android:id="@+id/img_tick"
+                                android:layout_width="9dp"
+                                android:layout_height="9dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/ic_checked" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tvOrderId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center"
+                            android:text="Đơn hàng: #123456789"
+                            android:textColor="#484848"
+                            android:textSize="9sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Số lượng"
+                            android:textColor="#666666"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:id="@+id/tvQuantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="#484848"
+                            android:textSize="9sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginBottom="4dp"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Tổng đơn"
+                                android:textColor="#666666"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:id="@+id/_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:text="0đ"
+                                android:textColor="#484848"
+                                android:textSize="9sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginBottom="11dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Dự kiến giao hàng"
+                            android:textColor="#666666"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:id="@+id/ship_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="4dp"
+                            android:textColor="#484848"
+                            android:textSize="9sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--            <RelativeLayout-->
+            <!--                android:id="@+id/bn_detail"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="33dp"-->
+            <!--                android:layout_above="@+id/bn_confirm"-->
+            <!--                android:layout_marginStart="19dp"-->
+            <!--                android:layout_marginTop="9dp"-->
+            <!--                android:layout_marginEnd="19dp"-->
+            <!--                android:layout_marginBottom="7dp"-->
+            <!--                android:background="@drawable/bn_view_detail_live_stream"-->
+            <!--                android:nextFocusLeft="@id/bn_detail"-->
+            <!--                android:nextFocusUp="@id/bn_detail">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerInParent="true"-->
+            <!--                    android:orientation="horizontal">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/text_bn_detail"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginStart="4dp"-->
+            <!--                        android:text="Xem chi tiết các đơn hàng"-->
+            <!--                        android:textColor="#999999"-->
+            <!--                        android:textSize="11sp"-->
+            <!--                        android:textStyle="bold"-->
+            <!--                        android:visibility="visible" />-->
+            <!--                </LinearLayout>-->
+            <!--            </RelativeLayout>-->
+
+
+            <RelativeLayout
+                android:id="@+id/bn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginBottom="19dp"
+                android:background="@drawable/bn_button_selector"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusLeft="@id/bn_confirm"
+                android:nextFocusRight="@id/bn_confirm"
+                android:nextFocusUp="@id/bn_plus"
+                android:nextFocusDown="@id/bn_confirm">
+
+                <TextView
+                    android:id="@+id/text_bn_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="4dp"
+                    android:text="Hoàn tất (5s)"
+                    android:textColor="#A1B753"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+

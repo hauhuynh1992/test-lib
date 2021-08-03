@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="236dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30dp"
+        android:background="#ffffff"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="1dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bn_confirm"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="19dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="9dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_go_back_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="Thêm voucher"
+                        android:textColor="#484848"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="11dp"
+                    android:text="Nhập voucher"
+                    android:textColor="#484848"
+                    android:textSize="11sp"
+                    android:visibility="visible"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_voucher"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="19dp"
+                    android:background="@drawable/live_stream_input_selector"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Nhập Voucher"
+                    android:nextFocusLeft="@+id/edt_voucher"
+                    android:nextFocusRight="@+id/edt_voucher"
+                    android:nextFocusUp="@+id/edt_voucher"
+                    android:paddingLeft="11dp"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="9dp"
+                    android:textColor="#002E36"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/text_choose_voucher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="11dp"
+                    android:text="Chọn voucher"
+                    android:textColor="#484848"
+                    android:textSize="11sp"
+                    android:visibility="invisible"
+                    android:textStyle="bold" />
+
+                <androidx.leanback.widget.VerticalGridView
+                    android:id="@+id/voucher_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:nextFocusLeft="@id/voucher_list"
+                    android:nextFocusRight="@id/voucher_list"
+                    android:nextFocusUp="@id/edt_voucher"
+                    android:nextFocusDown="@id/bn_confirm"
+                    android:paddingBottom="5dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/bn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginBottom="19dp"
+                android:background="@drawable/bn_fast_pay_live_stream_selector"
+                android:nextFocusLeft="@id/bn_confirm"
+                android:nextFocusRight="@id/bn_confirm"
+                android:nextFocusDown="@id/bn_confirm">
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+

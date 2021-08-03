@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="2dp">
+
+    <LinearLayout
+        android:id="@+id/con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/live_stream_voucher_selector"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/live_stream_product_quality_bg">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_omnishop" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#484848"
+                android:textSize="11sp"
+                android:visibility="visible"
+            />
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#999999"
+                android:textSize="11sp"
+                android:visibility="visible"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

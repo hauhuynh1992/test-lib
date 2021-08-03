@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="236dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30dp"
+        android:background="#ffffff"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="1dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bn_confirm"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="19dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="9dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_go_back_gray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Mua hàng nhanh"
+                        android:textColor="#484848"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="19dp"
+                    android:text="Tính năng mua hàng nhanh giúp bạn mua nhanh sản phẩm, tổng đài sẽ liên hệ sau khi đặt hàng."
+                    android:textColor="#999999"
+                    android:textSize="11sp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/live_stream_mine_stone_bg"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="4dp"
+                        android:layout_weight="0.9"
+                        android:background="@drawable/live_stream_mine_stone_process_bg" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="4dp"
+                        android:layout_weight="0.1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginEnd="19dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Thông tin mua hàng"
+                        android:textColor="#484848"
+                        android:textSize="9sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:text="Phương thức thanh toán"
+                        android:textColor="#999999"
+                        android:textSize="9sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="19dp"
+                    android:background="@drawable/live_stream_input_bg"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tạm tính"
+                            android:textColor="#999999"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="#484848"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ln_voucher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginBottom="5dp"
+                        android:visibility="visible">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#999999" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp">
+
+                            <TextView
+                                android:id="@+id/txt_voucher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Voucher"
+                                android:textColor="#999999"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/voucherCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_toEndOf="@+id/txt_voucher"
+                                android:background="@drawable/background_voucher_code"
+                                android:padding="4dp"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/voucher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:text="0đ"
+                                android:textColor="#484848"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginBottom="5dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#999999" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Phí giao hàng"
+                            android:textColor="#999999"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/ship"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="4dp"
+                            android:text="Miễn phí"
+                            android:textColor="#484848"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginEnd="11dp"
+                        android:layout_marginBottom="11dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#999999" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:text="Đã bao gồm VAT"
+                            android:textColor="#999999"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/total_vat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="9dp"
+                            android:textColor="#484848"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="11dp"
+                    android:text="Thêm voucher"
+                    android:textColor="#484848"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/bn_choose_voucher"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="19dp"
+                    android:background="@drawable/bn_button_selector"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:id="@+id/text_choose_voucher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="4dp"
+                        android:text="Chọn / nhập voucher"
+                        android:textColor="#484848"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="7dp"
+                    android:text="Chọn phương thức thanh toán"
+                    android:textColor="#484848"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/bn_cod"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="19dp"
+                    android:background="@drawable/live_stream_input_selector"
+                    android:nextFocusLeft="@id/bn_cod">
+
+                    <ImageView
+                        android:id="@+id/image_cod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="11dp"
+                        android:src="@drawable/ic_code_live" />
+
+                    <TextView
+                        android:id="@+id/text_bn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="28dp"
+                        android:layout_toEndOf="@+id/image_cod"
+                        android:text="COD"
+                        android:textColor="#484848"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:src="@drawable/ic_tick_supplier" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/bn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginBottom="19dp"
+                android:background="@drawable/bn_fast_pay_live_stream_selector"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusLeft="@id/bn_confirm"
+                android:nextFocusRight="@id/bn_confirm"
+                android:nextFocusDown="@id/bn_confirm">
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+

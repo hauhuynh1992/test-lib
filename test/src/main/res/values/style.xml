@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SlideLeftAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_slide_in_left</item>
+        <item name="android:windowExitAnimation">@anim/anim_slide_out_left</item>
+    </style>
+
+    <style name="SlideRightAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/anim_slide_out_right</item>
+    </style>
+
+    <style name="SlideUpAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/anim_slide_out_up</item>
+    </style>
+
+    <style name="SlideDownAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_slide_in_down</item>
+        <item name="android:windowExitAnimation">@anim/anim_slide_out_down</item>
+    </style>
+
+</resources>
